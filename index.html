@@ -14,6 +14,21 @@
         <div class ="Balance">
             <h2>Balance : $ <span id="Balance">0</span></h2>
         </div>
+
+        <div class = "input-group">
+            <input type ="text" id="description" placeholder="Description">
+            <input type ="number" id="amount" placeholder="Amount">
+            <select id="type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <button onclick="addTransaction()">Add</button>
+        </div>
+
+        <div class="transaction">
+            <h3>Transaction</h3>
+            <ul id="transaction-list"></ul>
+        </div>
     </div>
 </body>
 </html>
